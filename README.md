@@ -1,52 +1,23 @@
-sms-tools
-========= 
+[README.md]
 
+# Sms-Tools
 
-Sound analysis/synthesis tools for music applications written in python (with a bit of C) plus complementary teaching materials.
+<p align="center">
+  <a href="https://github.com/whisprer/sms-tools/releases"> 
+    <img src="https://img.shields.io/github/v/release/whisprer/sms-tools?color=4CAF50&label=release" alt="Release Version"> 
+  </a>
+  <a href="https://github.com/whisprer/sms-tools/actions"> 
+    <img src="https://img.shields.io/github/actions/workflow/status/whisprer/sms-tools/lint-and-plot.yml?label=build" alt="Build Status"> 
+  </a>
+</p>
 
-How to use
-----------
+![Commits](https://img.shields.io/github/commit-activity/m/whisprer/sms-tools?label=commits) 
+![Last Commit](https://img.shields.io/github/last-commit/whisprer/sms-tools) 
+![Issues](https://img.shields.io/github/issues/whisprer/sms-tools) 
+[![Version](https://img.shields.io/badge/version-3.1.1-blue.svg)](https://github.com/whisprer/sms-tools) 
+[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)](https://www.microsoft.com/windows)
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-In order to use these tools you have to install python 3.* (recommended 3.10) and the following modules: <code>ipython</code>, <code>numpy</code>, <code>matplotlib</code>, <code>scipy</code>, and <code>cython</code>. 
-
-In Ubuntu you can install these modules by typing in the Terminal:
-
-<code>$ sudo apt-get install python-dev ipython python-numpy python-matplotlib python-scipy cython</code>
-
-In OSX you can install these modules by typing in the Terminal:
-
-<code>$ pip install ipython numpy matplotlib scipy cython</code>
-
-then, to use the tools, after downloading the whole package, you need to compile some C functions. For that you should go to the directory <code>software/models/utilFunctions_C</code> and type:</p>
-
-<code>$ python compileModule.py build_ext --inplace </code>
-
-The basic sound analysis/synthesis functions, or models, are in the directory <code>software/models</code> and there is a graphical interface and individual example functions in <code>software/models_interface</code>. To execute the models GUI you have to go to the directory <code>software/models_interface</code> and type: 
-
-<code>$ python models_GUI.py </code>
-
-To execute the transformations GUI that calls various sound transformation functions go to the directory <code>software/transformations_interface</code> and type: 
-
-<code>$ python transformations_GUI.py </code>
-
-To modify the existing code, or to create your own using some of the functions, we recommend to use the <code>workspace</code> directory. Typically you would copy a file from <code>software/models_interface</code> or from <code>software/transformations_interface</code> to that directory, modify the code, and execute it from there (you will have to change some of the paths inside the files). 
-
-Jupyter Notebooks
--------
-A number of teaching exercises are available as jupyter notebooks in the <code>notebook</code> directory. To do them you need to install Jupyter Notebook according to its instructions https://jupyter.org/install
-
-Start up jupyter notebook by typing in the Terminal.
-
-<code>$ jupyter notebook</code> 
-
-It will open a web browser, from which you can open the <code>notebook</code> directory.
-
-Content
--------
-
-All the code is in the <code> software </code> directory, with subdirectories for the models, the transformations, and the interfaces. The lecture materials are in the <code>lectures</code> directory, the exercises related to the lectures are in the  <code>notebook</code> directory, and the sounds used for the examples and coming from http://freesound.org are in the <code>sounds</code> directory.
-
-License
--------
-All the software is distributed with the Affero GPL license (http://www.gnu.org/licenses/agpl-3.0.en.html), the lecture slides are distributed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0) license (http://creativecommons.org/licenses/by-nc-sa/4.0/) and the sounds in this repository are released under Creative Commons Attribution 4.0 (CC BY 4.0) license (http://creativecommons.org/licenses/by/4.0/)
-
+<p align="center">
+  <img src="sms-tools-banner.png" width="850" alt="Sms-Tools Banner">
